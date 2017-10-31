@@ -1,0 +1,45 @@
+<div class="row">
+  <center>
+    <!-- Left Column: Ordered-->
+    <div class="col-md-7 col-sm-12">
+      <h4 class="columnFont">Ordered & ready to eat!</h4>
+      <div id="ready_to_eat">
+        {{#each burgers}}
+          {{#unless devoured}}
+          <div class= "row" id= "each-one">
+              <div class="form-control">
+                <div>{{burger_name}}</div>
+              </div>
+              <div class="customer-info">
+                <form action="burger/eat/{{id}}" method="POST">
+                  
+                  <input name="burgerEater" required type="text" class="form-control" id="burgerEaterTextBox" placeholder="Customer Name">
+                     
+                  <span class="input-group-btn">
+                    <button class="btn btn-success devour-button" type="submit">Devour It!</button>
+                  </span>
+                 
+                </form>
+              </div>
+          </div>
+          {{/unless}}
+        {{/each}}
+      </div>
+    </div>
+
+    <!-- Right Column: Devoured -->
+    <div class="col-md-5">
+      <h4 class="columnFont">Burgers Devoured</h4>
+      <div id="devouredForm">
+        {{#each burgers}}
+          {{#if this.devoured}}
+              <div class="form-control">
+                <div class="col-md-6 col-xs-6"> {{this.burger_name}}</div>
+                <div class="col-md-6 col-xs-6"><i>(Eaten by {{this.devourer.devourer_name}})</i></div> 
+              </div>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  </center>
+</div>

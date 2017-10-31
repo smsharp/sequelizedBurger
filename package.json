@@ -1,0 +1,27 @@
+{
+  "name": "sequelized-burger",
+  "version": "1.0.0",
+  "description": "A Simple Burger Ordering App Using Sequel",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "smsharp",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smsharp/sequelizedBurger.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0",
+    "sequelize": "^3.25.0",
+    "mysql2": "^1.4.2"
+  },
+  "devDependencies": {
+    "handlebars-helper-css": "^0.1.0"
+  }
+}

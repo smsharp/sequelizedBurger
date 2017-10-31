@@ -1,0 +1,57 @@
+body {
+  background-color: #f2dca9;
+}
+
+img {
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+.columnFont {
+  color: #bb4a26;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.customer-info {
+	float: right;
+	width: 35%;
+}
+
+.directionsFont {
+	color: #36241d;
+	margin-top: 5px;
+}
+
+.btn-danger {
+	background-color: #bb4a26;
+}
+
+.btn-success {
+	float: right;
+	background-color: #889c0f;
+	border-color: #889c0f;
+	margin-top: -34px;
+}
+
+#each-one {
+	margin-bottom: 20px;
+}
+
+.customer-info .form-control {
+	width: 230px;
+	margin-left: -100px;
+}
+
+.btn-success:hover {
+	background-color: #adc914;
+	border-color: #adc914;
+}
+
+#devouredForm {
+	width: 100%;
+}
+
+.input-group-btn:last-child>.btn {
+	margin-left: 10px;
+}
