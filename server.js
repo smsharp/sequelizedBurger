@@ -21,6 +21,13 @@ var router = require("./controllers/burgers_controller.js");
 
 app.use("/", router);
 
-app.listen(port, function(){
-  console.log('Listening on port ' + port);
+// Connects to burger models
+var models = require('./models');
+
+// Syncing our sequelize models and then starting our Express app
+// =============================================================
+models.sequelize.sync({ force: true }).then(function() {
+  app.listen(port, function() {
+    console.log("App listening on PORT " + port);
+  });
 });

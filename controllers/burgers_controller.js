@@ -5,12 +5,6 @@ var router = express.Router();
 // Connects to burger models
 var models = require('../models');
 
-// Extracts the sequelize connection from the models object
-var sequelizeConnection = models.sequelize;
-
-// Sync the tables
-sequelizeConnection.sync();
-
 // Create all our routes and set up logic within those routes where required.
 router.get('/', function (req, res) {
   res.redirect('/index');
